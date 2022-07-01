@@ -1,0 +1,71 @@
+.firstRowBackground {
+  min-height: 100vh;
+  background-image: url(img/fond-dev.avif);
+  background-position: center;
+  background-size: 100rem;
+  height: max-content;
+  
+}
+
+.description {
+  max-width: 500px;
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+.text-bienvenue {
+  font-size: 22px;
+}
+
+.big-text {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.btn-social-share {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#text-presentation {
+  background-color: #17171fce;
+}
+
+#mouse-btn {
+  color: white;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 30px;
+  transition: 1s;
+}
+
+#mouse-btn:hover {
+  transform: rotate(180deg);
+  animation: animTopBottom 3s 0.5s infinite;
+  cursor: pointer;
+}
+
+#about {
+  background-color: #504e4e57;
+}
+
+#competences .card-img-top {
+  max-width: 100px;
+  margin: auto;
+}
+
+#navbar-site {
+  transition: 1s;
+}
+
+a.nav-link.active {
+  color:rgba(106, 11, 221, 0.699) !important;
+}
+
+@keyframes animTopBottom {
+  50% {
+    height: 100px; 
+    color: rgba(106, 11, 221, 0.699);
+  }
+}
