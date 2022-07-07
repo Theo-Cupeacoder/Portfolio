@@ -1,3 +1,49 @@
+/*
+TO DO :
+
+- Changer svg étoiles
+- Changer svg Témoignages
+- Créer visuels mes réalisations
+- Créer une alerte de type info, 
+  pour signaler que le site est en cours de création
+- Définir la police
+- Page contact 
+*/
+
+body {
+  --color-accent: rgba(106, 11, 221, 0.699);
+}
+
+.color-grey {
+  color:rgb(119, 117, 117);
+}
+
+.text-secondary {
+  color: var(--color-accent) !important;
+}
+
+.btn-secondary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-outline-secondary {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+
 .firstRowBackground {
   min-height: 100vh;
   background-image: url(img/fond-dev.avif);
@@ -28,8 +74,34 @@
   height: 40px;
 }
 
-#text-presentation {
+.main-content-website section:nth-child(2n) {
   background-color: #17171fce;
+}
+
+.temoignage {
+  color: rgb(119, 117, 117);
+}
+
+.temoignage-icon {
+  color: var(--color-accent);
+  padding: 30px;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color: var(--color-accent);
+}
+
+#scroll-top-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-accent);
+  visibility: hidden;
+}
+
+#scroll-top-button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 #mouse-btn {
@@ -55,17 +127,66 @@
   margin: auto;
 }
 
+#realisations img.realisation-img {
+  max-width: 100%;
+}
+
+#realisations a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+#realisations a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 #navbar-site {
+  transition: 1s;
+  z-index: 1000;
+}
+
+#colors-setter {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 1200;
+  display:flex;
+  left: -100px;
   transition: 1s;
 }
 
+#colors-setter .color-button {
+  padding: 5px;
+}
+
+#colors-setter .color-picker {
+  width: 100px;
+  padding: 15px;
+  background-color: #504e4e57;
+  border-radius: 5px;
+}
+
+#colors-setter .color-button svg{
+  animation: rotateItem 3s linear infinite;
+}
+
 a.nav-link.active {
-  color:rgba(106, 11, 221, 0.699) !important;
+  color:var(--color-accent) !important;
 }
 
 @keyframes animTopBottom {
   50% {
     height: 100px; 
-    color: rgba(106, 11, 221, 0.699);
+    color: var(--color-accent);
+  }
+}
+
+@keyframes rotateItem {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
   }
 }

@@ -1,224 +1,700 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Théo DELAUNE - CV en ligne</title>
-  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbar-site" data-bs-smooth-scroll="true" tabindex="0">
-  
-  <header>
-    <!-- Navbar -->
-    <nav id="navbar-site" class="position-fixed navbar navbar-expand-lg navbar-dark w-100 bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash text-dark bg-light rounded-circle" viewBox="0 0 16 16">
-            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-          </svg>
-          Théo DELAUNE - Développeur Web
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#accueil">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">Qui suis-je ?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#competences">Compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="">
-    <!-- Accueil -->
-    <section id="accueil">
-      <div class="container-fluid">
-        <div class="row row-cols-1 firstRowBackground">
-          <div class="d-flex justify-content-center text-center flex-column" id="text-presentation">
-            <div class="text-bienvenue">Bienvenue !</div>
-            <div class="big-text">Je suis Développeur</div>
-            <p class="description">Je m'appelle Théo et je suis en formation de développeur web full stack option PHP/Synfony depuis novembre 2021.</p>
-            <div class="btn-container">
-              <a href="docs/CV_Delaune-Theo_2021_(V2).pdf" target="_blank" class="btn btn-outline-secondary">Télécharger mon CV</a>
-            </div>
-            <div class="mb-5">
-              <a href="#about">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-mouse3" viewBox="0 0 16 16" id="mouse-btn">
-                  <path d="M7 0c-.593 0-1.104.157-1.527.463-.418.302-.717.726-.93 1.208C4.123 2.619 4 3.879 4 5.187v.504L3.382 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V7.51a.71.71 0 0 0 0-.02V5.186c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59C9.981.123 8.26 0 7 0zm2.5 6.099V1.232c.51.11 1.008.267 1.46.49.596.293 1.099.694 1.455 1.24.355.543.585 1.262.585 2.225v1.69l-3.5-.778zm-1-5.025v4.803L5 5.099c.006-1.242.134-2.293.457-3.024.162-.366.363-.63.602-.801C6.292 1.105 6.593 1 7 1c.468 0 .98.018 1.5.074zM5 6.124 13 7.9v2.912C13 13.145 11.19 15 9 15H7c-2.19 0-4-1.855-4-4.188V8.236a1.5 1.5 0 0 1 .83-1.342l.187-.093c.01.265.024.58.047.92.062.938.19 2.12.462 2.937a.5.5 0 1 0 .948-.316c-.227-.683-.35-1.75-.413-2.688a29.17 29.17 0 0 1-.06-1.528v-.002z"/>
-                </svg>
-              </a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Théo DELAUNE - CV en ligne</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-dark text-light"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-site"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <header>
+      <!-- Navbar -->
+      <nav
+        id="navbar-site"
+        class="position-fixed navbar navbar-expand-lg navbar-dark w-100 bg-transparent"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-code-slash text-dark bg-light rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+              />
+            </svg>
+            Théo DELAUNE - Développeur Web
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#accueil"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about"
+                  >Qui suis-je ?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#competences"
+                  >Compétences</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#clients"
+                  >Témoignages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <div class="">
-      <!-- Qui suis-je -->
-      <section class="py-5" id="about">
-        <div class="container">
-          <div class="mb-5 row row-cols-1 row-cols-md-2 align-items-center py-5">
-            <div>
-              <img class="border border-light border-5 rounded-2" src="img/img-theo.jpg" alt="Photo de Théo" style="max-width: 100%;">
-            </div>
-            <div class="pt-2 pb-2">
-              <h2>Qui suis-je ?</h2>
-              <p>Bonjour, je suis <span class="text-secondary">Théo DELAUNE</span></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat sunt omnis quos incidunt ullam iusto?</p>
-              <div class="">
-                <button class="me-2 btn btn-outline-secondary btn-social-share">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin d-flex justify-content-center align-items-center" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+    <main class="main-content-website">
+      <!-- Accueil -->
+      <section id="accueil">
+        <div class="container-fluid">
+          <div class="row row-cols-1 firstRowBackground">
+            <div
+              class="d-flex justify-content-center text-center flex-column"
+              id="text-presentation"
+            >
+              <div class="text-bienvenue">Bienvenue !</div>
+              <div class="big-text">Je suis Développeur</div>
+              <p class="description">
+                Je m'appelle Théo et je suis en formation de développeur web
+                full stack option PHP/Synfony depuis novembre 2021.
+              </p>
+              <div class="btn-container">
+                <a
+                  href="docs/CV_Delaune-Theo_2021_(V2).pdf"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Télécharger mon CV</a
+                >
+              </div>
+              <div class="mb-5">
+                <a href="#about">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-mouse3"
+                    viewBox="0 0 16 16"
+                    id="mouse-btn"
+                  >
+                    <path
+                      d="M7 0c-.593 0-1.104.157-1.527.463-.418.302-.717.726-.93 1.208C4.123 2.619 4 3.879 4 5.187v.504L3.382 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V7.51a.71.71 0 0 0 0-.02V5.186c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59C9.981.123 8.26 0 7 0zm2.5 6.099V1.232c.51.11 1.008.267 1.46.49.596.293 1.099.694 1.455 1.24.355.543.585 1.262.585 2.225v1.69l-3.5-.778zm-1-5.025v4.803L5 5.099c.006-1.242.134-2.293.457-3.024.162-.366.363-.63.602-.801C6.292 1.105 6.593 1 7 1c.468 0 .98.018 1.5.074zM5 6.124 13 7.9v2.912C13 13.145 11.19 15 9 15H7c-2.19 0-4-1.855-4-4.188V8.236a1.5 1.5 0 0 1 .83-1.342l.187-.093c.01.265.024.58.047.92.062.938.19 2.12.462 2.937a.5.5 0 1 0 .948-.316c-.227-.683-.35-1.75-.413-2.688a29.17 29.17 0 0 1-.06-1.528v-.002z"
+                    />
                   </svg>
-                </button>
-                <button class="me-2 btn btn-outline-secondary btn-social-share">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram d-flex justify-content-center align-items-center" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg>
-                </button>
-                <button class="me-2 btn btn-outline-secondary btn-social-share">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook d-flex justify-content-center align-items-center" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg>
-                </button>
-                <button class="me-2 btn btn-outline-secondary btn-social-share">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter d-flex justify-content-center align-items-center" viewBox="0 0 16 16">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                  </svg>
-                </button>
+                </a>
               </div>
             </div>
-    
           </div>
         </div>
+      </section>
+
+      <!-- Qui suis-je -->
+      <section class="py-5" id="about">
+          <div class="container">
+            <div
+              class="mb-5 row row-cols-1 row-cols-md-2 align-items-center py-5"
+            >
+              <div>
+                <img
+                  class="border border-light border-5 rounded-2"
+                  src="img/img-theo.jpg"
+                  alt="Photo de Théo"
+                  style="max-width: 100%"
+                />
+              </div>
+              <div class="pt-2 pb-2">
+                <h2>Qui suis-je ?</h2>
+                <p>
+                  Bonjour, je suis
+                  <span class="text-secondary">Théo DELAUNE</span>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora fugiat sunt omnis quos incidunt ullam iusto?
+                </p>
+                <div class="">
+                  <button
+                    class="me-2 btn btn-outline-secondary btn-social-share"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-linkedin d-flex justify-content-center align-items-center"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="me-2 btn btn-outline-secondary btn-social-share"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-instagram d-flex justify-content-center align-items-center"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="me-2 btn btn-outline-secondary btn-social-share"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-facebook d-flex justify-content-center align-items-center"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="me-2 btn btn-outline-secondary btn-social-share"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-twitter d-flex justify-content-center align-items-center"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
 
       <!-- Mes compétences -->
       <section class="py-5" id="competences">
-        <div class="container">
-          <div class="mt-5 mb-5 row text-center">
-            <h2>Mes compétences</h2>
-            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ab laborum velit minima beatae nisi illum voluptatum fugit enim atque?</p>
-            <div class="mt-3 mb-3 row row-cols-1 row-cols-sm-2 row-cols-md-3">
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/html.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">HTML</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                  </div>
-                </div>
-              </div>
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/css.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">CSS</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                  </div>
-                </div>
-              </div>
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/JS.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                  </div>
-                </div>
-              </div>
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/bootstrap.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bootstrap</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
+          <div class="container">
+            <div class="mt-5 mb-5 row text-center">
+              <h2>Mes compétences</h2>
+              <p class="color-grey">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+                ab laborum velit minima beatae nisi illum voluptatum fugit enim
+                atque?
+              </p>
+              <div class="mt-3 mb-3 row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img src="img/html.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">HTML</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/PHP.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">PHP</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img src="img/css.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">CSS</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="p-3">
-                <div class="card bg-dark p-3 border-secondary h-100">
-                  <img src="img/wordpress.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">WordPress</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img src="img/JS.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">JavaScript</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
-                    <img src="img/full-star.png" alt="" width="32px" height="32px">
+                </div>
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img
+                      src="img/bootstrap.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bootstrap</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img src="img/PHP.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">PHP</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div class="card bg-dark p-3 border-secondary h-100">
+                    <img
+                      src="img/wordpress.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">WordPress</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                      <img
+                        src="img/full-star.png"
+                        alt=""
+                        width="32px"
+                        height="32px"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+      </section>
+
+      <!-- Je suis disponible -->
+      <section class="py-5 text-center" id="available">
+        <h2>Je suis disponible en tant que Freelance</h2>
+        <p class="mt-4">
+          <button class="btn btn-secondary">M'embaucher</button>
+        </p>
+      </section>
+
+      <!-- Temoignages -->
+      <section class="py-5 text-center" id="clients">
+          <div class="container">
+            <h2 class="mb-3">Témoignages</h2>
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators mb-0">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="temoignage-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chat-right-quote" viewBox="0 0 16 16">
+                      <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                      <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                    </svg>
+                  </div>
+                  <img
+                    src="https://i.picsum.photos/id/1078/100/100.jpg?hmac=WJWXVvwA32jM4De7_dqwHCxqrwBorkh1wJ3OWEX6KTA"
+                    class="d-block m-auto rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="py-2">
+                    <p class="temoignage"><em>Pas mal !</em></p>
+                    <p class="auteur">This is a text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="temoignage-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chat-right-quote" viewBox="0 0 16 16">
+                      <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                      <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                    </svg>
+                  </div>
+                  <img
+                    src="https://i.picsum.photos/id/1078/100/100.jpg?hmac=WJWXVvwA32jM4De7_dqwHCxqrwBorkh1wJ3OWEX6KTA"
+                    class="d-block m-auto rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="py-2">
+                    <p class="temoignage"><em>Pas mal !</em></p>
+                    <p class="auteur">This is a text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="temoignage-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chat-right-quote" viewBox="0 0 16 16">
+                      <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                      <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+                    </svg>
+                  </div>
+                  <img
+                    src="https://i.picsum.photos/id/1078/100/100.jpg?hmac=WJWXVvwA32jM4De7_dqwHCxqrwBorkh1wJ3OWEX6KTA"
+                    class="d-block m-auto rounded-circle img-thumbnail"
+                    alt="..."
+                  />
+                  <div class="py-2">
+                    <p class="temoignage"><em>Pas mal !</em></p>
+                    <p class="auteur">This is a text</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </section>
+
+      <!-- Mes réalisations -->
+      <section class="py-5 text-center" id="realisations">
+        <div class="container">
+          <h2 class="pb-3">Mes réalisations</h2>
+          <div class="row row-cols-1 row-cols-md-3 px-3">
+            <div class="realisation-container">
+              <img class="realisation-img" src="img/fond-dev.avif" alt="">
+              <p class="realisation-text py-2">
+                Site
+                <a href="#">Les êtres naturels</a>
+              </p>
+            </div>
+            <div class="realisation-container">
+              <img class="realisation-img" src="img/fond-dev.avif" alt="">
+              <p class="realisation-text py-2">
+                Site
+              <a href="#">Les êtres naturels</a>
+              </p>
+            </div>
+            <div class="realisation-container">
+              <img class="realisation-img" src="img/fond-dev.avif" alt="">
+              <p class="realisation-text py-2">
+                Site
+                <a href="#"> Les êtres naturels</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-    </div>
-  </main>
+      <!-- Bouton scroll top -->
+      <a class="btn" id="scroll-top-button" href="#accueil">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-compact-up text-light" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
+        </svg>
+        
+      </a>
 
-  <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
+      <!-- Bouton couleur -->
+      <div id="colors-setter">
+        <div class="color-picker">
+          <div>
+            <label>Couleur</label>
+            <input class="form-control form-control-color" type="color" id="input-accent">
+          </div>
+          <div class="pt-2">
+            <button class="btn btn-secondary" onclick="changeColorFromPicker()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+              </svg>
+            </button>
+          </div>
+          
+        </div>
+        <div class="color-button">
+          <button class="btn btn-outline-secondary" onclick="showPanelColor()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </main>
+
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
